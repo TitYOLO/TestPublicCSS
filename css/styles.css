@@ -1,0 +1,58 @@
+:root {
+    --color1 :#179E94;
+    --color2 :#8A5D3B;
+    --color3 :#F6921E;
+    --font1  : 'Hind Madurai', sans-serif;
+    --font2  : 'Montserrat', sans-serif;
+}
+
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,*:before,*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+h1,h2,h3 {
+    font-family: 'Playfair Display', serif;
+    margin: 0 0 5rem 0; 
+}
+
+
+h1 {
+    font-size: 5rem;
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto
+}
+
+
