@@ -1,26 +1,293 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300&family=Montserrat:wght@400;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300&family=Montserrat:wght@400;800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
     <title>Bienvenido amaac</title>
 </head>
+
 <body>
-    <!-- <header class="header">
+    <header class="header">
         <div class="header__nav">
-            <nav class="header__list">
-                <picture>
-                    <img src="" alt="">
+            <nav class="header__list contenedor">
+                <picture class="header__img">
+                    <img src="assets/icons/AMAAC.png" alt="">
                 </picture>
+
+                <div class="icono__svg">
+                    <img class="hamburguesa" src="icono.svg" alt="">
+                </div>
+
+                <div class="header__links">
+                    <a href="#">Principal</a>
+                    <a href="#">Nosotros</a>
+                    <a href="#">Productos</a>
+                    <a href="#">Servicios</a>
+                    <a href="#">Contáctanos</a>
+                </div>
+
+
             </nav>
         </div>
-    </header> -->
+
+        <div class="header__hero">
+            <div class="header__text">
+                <p class="header__text--agente">Agentes de cambio</p>
+                <div class="header__tittle">
+                    <h1> Asociacion <span class="header__tittle--2">Medio Ambiente <span class="header__tittle--3">Arte
+                                y Cultura</span> </h1>
+                </div>
+                <p class="header__paragraph">Somos una ONG conformada por jóvenes voluntarios comprometidos con la
+                    sociedad para generar un cambio.</p>
+                <a class="header__btn" href="#">Conócenos</a>
+            </div>
+
+            <picture class="header__picture">
+                <img src="https://images.pexels.com/photos/12314885/pexels-photo-12314885.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt="">
+            </picture>
+        </div>
+    </header>
+
+    <main style="margin-top: 20rem;">
+        <section>
+            <div class="Texto Princi">
+                <div class="imagen Fondo1">
+                    <img width="200" src="/assets/icons/Group 42espiral (1).png">
+                </div>
+
+                <h2 class="Texto a1">Nuestros</h2>
+                <h2 class="Texto a2"> Pilares</h2>
+            </div>
+
+
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="contenedor Padre">
+                            <div class="contenedor c1">
+                                <h3 class="Texto b1">EDUCATIVO</h3>
+                                <img class="Imagen sub1" width="100" src="/assets/icons/Educación.png">
+                                <h4 class=" parrafo  p1">Organizamos programas para fortalecer las habilidades
+                                    educativas, deportivas
+                                    y culturales de los participantes
+                                </h4>
+                            </div>
+
+                            <div class="contenedor c2">
+                                <h3 class="Texto b2">SALUD</h3>
+                                <img class="Imagen sub2" width="100" src="/assets/icons/Salud.png">
+                                <h4 class=" parrafo  p2">Realizamos campañas de salud con el objetivo de mejorar el
+                                    bienestar de las personas
+                                </h4>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="contenedor Padre">
+                            <div class="contenedor c3">
+                                <h3 class="Texto b3">AMBIENTAL</h3>
+                                <img class="Imagen sub3" width="100" src="/assets/icons/Ambiental.png">
+                                <h4 class="parrafo  p3">Implementamos programas ambientales para proteger el entorno y
+                                    mejorar la calidad de vida
+                                </h4>
+                            </div>
+
+
+                            <div class="contenedor c4">
+                                <h3 class="Texto b4">ANIMALISTA</h3>
+                                <img class="Imagen sub4" width="100" src="/assets/icons/Animalista.png">
+                                <h4 class=" parrafo  p4">Operamos un albergue para cuidar perros y gatos, promoviendo la
+                                    adopcion responsable
+                                </h4>
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+            <!-- Swiper JS -->
+            <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+            <!-- Initialize Swiper -->
+            <script>
+                var swiper = new Swiper(".mySwiper", {
+                    pagination: {
+                        el: ".swiper-pagination",
+                        clickable: true,
+                        renderBullet: function (index, className) {
+                            return '<span class="' + className + '">' + (index + 1) + "</span>";
+                        },
+                    },
+                });
+            </script>
+
+
+
+            <div class=" contenedor princi1">
+
+
+                <div class="contenedor Titulo">
+                    <h2 class="Texto Titulo2">
+                        ¿Quienes
+                    </h2>
+                    <h2 class="Texto Titulo2a">somos?</h2>
+                </div>
+
+
+
+                <div class="Imagen2">
+                    <img width="600" height="350" src="/assets/img/QuienesSomos.png">
+                </div>
+
+                <div class="contenedor parrafo1">
+                    <h4 class="Texto parrafo4">
+                        Somos una organización liderada por jóvenes voluntarios comprometidos con el cambio social.
+                        Trabajamos juntos
+                        para apoyar a las comunidades, especialmente a niños, adolescentes, adultos y adultos mayores,
+                        enfrentando
+                        problemáticas específicas.
+                        Nuestra meta es formar y fortalecer los valores, principios y acciones positivas a través de
+                        talleres y
+                        actividades, empoderando a más líderes en la comunidad
+                    </h4>
+                </div>
+
+                <div class="contenedo1 FODA">
+
+                    <div class="Mision1">
+                        <img class="Imagen sub6" width="100" src="/assets/icons/Misión.png">
+                        <h3 class="Texto sub5">Misión</h3>
+                        <h5 class="Texto parrafo5">“Ser un equipo de agentes de cambio profesionales con un propósito
+                            claro: llevar a
+                            cabo proyectos socioculturales para mejorar la calidad de vida de las poblaciones
+                            vulnerables en Perú”
+                        </h5>
+                    </div>
+
+                    <div class="Vision1">
+                        <img class="Imagen sub7" width="100" src="/assets/icons/Visión.png">
+                        <h3 class="Texto sub6">Visión</h3>
+                        <h5 class="Texto parrafo6">
+                            “Ser una ONG autosostenible que fomente y motive la participación activa de las comunidades
+                            vulnerables a
+                            través de la ejecución de proyectos impactantes y significativos.”
+                        </h5>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+        </section>
+    </main>
+
+    <section class="productos">
+        <h2>Nuestros <span>Productos</span></h2>
+        <div class="productos__container contenedor">
+            
+            <div class="card">
+                <div class="card__text">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias veniam molestias, laboriosam aspernatur commodi, facilis corporis dolore nesciunt harum ducimus perspiciatis</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card__text">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias veniam molestias, laboriosam aspernatur commodi, facilis corporis dolore nesciunt harum ducimus perspiciatis</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card__text">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias veniam molestias, laboriosam aspernatur commodi, facilis corporis dolore nesciunt harum ducimus perspiciatis</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="servicios">
+        <h2>Nuestros <span>Servicios</span></h2>
+        <div class="servicios__container contenedor">
+            
+            <div class="card1">
+                <div class="card__text1">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias veniam molestias, laboriosam aspernatur commodi, facilis corporis dolore nesciunt harum ducimus perspiciatis</p>
+                </div>
+            </div>
+
+            <div class="card1">
+                <div class="card__text1">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias veniam molestias, laboriosam aspernatur commodi, facilis corporis dolore nesciunt harum ducimus perspiciatis</p>
+                </div>
+            </div>
+
+            <div class="card1">
+                <div class="card__text1">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias veniam molestias, laboriosam aspernatur commodi, facilis corporis dolore nesciunt harum ducimus perspiciatis</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="contenedor footer__contenido">
+            <h2 class="footer__titulo">Sientete libre de <span>contactarnos</span> </h2>
+            
+            <div class="footer__caja">
+                <div class="mapa">
+                    <iframe class="mapa__frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d290.1237482835568!2d-77.08604980093853!3d-11.945096591187644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105d10b9533475b%3A0x30a4bced46bd1ab1!2sAMAAC%20PER%C3%9A!5e0!3m2!1ses!2spe!4v1675808266541!5m2!1ses!2spe" 
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="form">
+                    <div class="form__input">
+                        <label for="nombre">Nombres</label>
+                        <input type="text" required>
+                    </div>
+    
+                    <div class="form__input">
+                        <label for="nombre">Apellidos</label>
+                        <input type="text" required>
+                    </div>
+    
+                    <div class="form__input">
+                        <label for="nombre">Correo</label>
+                        <input type="email" required>
+                    </div>
+    
+                    <div class="form__input">
+                        <label for="nombre">Mensaje</label>
+                        <input type="text" required>
+                    </div>
+    
+                    <button class="footer__button" type="submit">Enviar</button>
+                </div>
+            </div>
+            
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
 
 </body>
+
 </html>
