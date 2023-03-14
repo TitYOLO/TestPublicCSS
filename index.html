@@ -14,6 +14,14 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
     <title>Bienvenido amaac</title>
+
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  
+    <script type="text/javascript">
+    emailjs.init('iDxfmCZU7bUg82vow')
+    </script>
+    
 </head>
 
 <body>
@@ -253,40 +261,47 @@
         <div class="contenedor footer__contenido">
             <h2 class="footer__titulo">Sientete libre de <span>contactarnos</span> </h2>
             
-            <div class="footer__caja">
-                <div class="mapa">
-                    <iframe class="mapa__frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d290.1237482835568!2d-77.08604980093853!3d-11.945096591187644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105d10b9533475b%3A0x30a4bced46bd1ab1!2sAMAAC%20PER%C3%9A!5e0!3m2!1ses!2spe!4v1675808266541!5m2!1ses!2spe" 
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-                <div class="form">
-                    <div class="form__input">
-                        <label for="nombre">Nombres</label>
-                        <input type="text" required>
+            <form id="form"  name="form"  method="post">
+                <div class="footer__caja">
+                    <div class="mapa">
+                        <iframe class="mapa__frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d290.1237482835568!2d-77.08604980093853!3d-11.945096591187644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105d10b9533475b%3A0x30a4bced46bd1ab1!2sAMAAC%20PER%C3%9A!5e0!3m2!1ses!2spe!4v1675808266541!5m2!1ses!2spe" 
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
-    
-                    <div class="form__input">
-                        <label for="nombre">Apellidos</label>
-                        <input type="text" required>
-                    </div>
-    
-                    <div class="form__input">
-                        <label for="nombre">Correo</label>
-                        <input type="email" required>
-                    </div>
-    
-                    <div class="form__input">
-                        <label for="nombre">Mensaje</label>
-                        <input type="text" required>
-                    </div>
-    
-                    <button class="footer__button" type="submit">Enviar</button>
-                </div>
-            </div>
-            
-        </div>
-    </footer>
+                    <div class="form">
+                        <div class="form__input">
+                            <label for="nombre">Nombres</label>
+                            <input type="text" name="nombre" required>
+                        </div>
+        
+                        <div class="form__input">
+                            <label for="apellido">Apellidos</label>
+                            <input type="text" name="apellido" required>
+                        </div>
+        
+                        <div class="form__input">
+                            <label for="correo">Correo</label>
+                            <input type="email" name="correo" required>
+                        </div>
+        
+                        <div class="form__input">
+                            <label for="mensaje">Mensaje</label>
+                            <input type="text" name="mensaje" required>
+                        </div>
+        
+                        <button id="button" class="footer__button" type="submit">Enviar</button>
+                         
+                         
 
-    <script src="js/app.js"></script>
+                    </div>
+                </div>
+                
+            </div>
+        </footer>
+    
+        <script src="js/app.js"></script>
+
+            </form>
+
 
 </body>
 
