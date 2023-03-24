@@ -1,0 +1,608 @@
+:root {
+    --color1: #179E94;
+    --color2: #8A5D3B;
+    --color3: #F6921E;
+    --font1: 'Hind Madurai', sans-serif;
+    --font2: 'Montserrat', sans-serif;
+}
+
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+    position: relative;
+    z-index: 10;
+    
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--font2);
+    margin: 0 0 5rem 0;
+}
+
+
+h1 {
+    font-size: 5rem;
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+iframe {
+    width: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.green {
+    color: #179E94;
+}
+
+.yellow {
+    color: #F6921E;
+}
+
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.header {
+    padding: .1px;
+    
+}
+
+.navegacion__img {
+    width: 15rem;
+}
+
+.header__contenedor {
+    background-color: #F5F5F5;
+}
+
+@media (min-width:1024px ){
+    .header__contenedor {
+        width: 100%;
+        position: fixed;
+        height: 10rem;
+        z-index: 20;
+    }
+}
+
+.navegacion__img {
+    margin: 0 auto;
+    padding-bottom: 2rem
+}
+
+@media (min-width:1024px ){
+    .navegacion__img {
+        margin: 0;
+    }
+}
+
+.navegacion {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+@media (min-width:1024px ){
+    .navegacion {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.navegacion__links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+
+
+@media (min-width:1024px ){
+    .navegacion__links {
+        flex-direction: row;
+
+    }
+}
+
+.navegacion__link:hover {
+    overflow: hidden;
+    text-shadow: .25px .25px black;
+}
+
+
+
+@media (min-width:1024px ){
+    .hero {
+        margin-top: 9.83rem;
+        background-image: url(../assets/icons2/PRINCIPALES/4Principal.png);
+        background-repeat: no-repeat;
+        background-size: 10rem 50rem;
+        background-position: 15rem 10rem;
+    }
+}
+
+.hero__tittle {
+    font-size: 3rem;
+    margin-bottom: 0;
+    line-height: 1.2;
+}
+
+@media (min-width:1024px ){
+    .hero__tittle {
+        font-size: 4rem;
+        line-height: 1.2;
+    }
+}
+
+@media (min-width: 1200px){
+    .hero__tittle {
+        font-size: 5rem;
+    }
+}
+
+.hero__image {
+    background-image: url(../assets/icons/portada-android.png);
+    background-repeat: no-repeat;
+    background-size: 100% 20rem;
+}
+
+@media (min-width: 425px ){
+    .hero__image {
+        background-size: 100% 30rem;
+    }
+}
+
+@media (min-width: 700px ){
+    .hero__image {
+        background-size: 100% 40rem;
+    }
+}
+
+
+@media (min-width:1024px ){
+    .hero__image {
+        background-image: url(../assets/icons/Portada.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+
+.hero__contenedor {
+    display: grid;
+    grid-template-rows: 1fr 20rem;
+}
+
+@media (min-width: 425px){
+    .hero__contenedor {
+        grid-template-rows: 1fr 30rem;
+    }
+}
+
+@media (min-width:700px ){
+    .hero__contenedor {
+        grid-template-rows: 1fr 40rem;
+    }
+}
+
+.hero__info {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+@media (min-width:1024px ){
+    .hero__info {
+        margin-top:0;
+        padding-left: 10rem;
+        padding-right: 2rem;
+    }
+}
+
+@media (min-width:1024px){
+    .hero__contenedor {
+        grid-template-rows: unset;
+        grid-template-columns: repeat(2, 1fr);
+        height: 65rem;
+    }
+
+    .hero__info {
+        align-self: center;
+    }
+}
+
+
+.hero__concepto {
+    text-transform: uppercase;
+    color: #F6921E;
+    font-weight: 700;
+}
+
+
+.hero__button {
+    background-color: #F6921E;
+    color: #F5F5F5;
+    padding: 1.5rem 4rem;
+    font-weight: 700;
+    border-radius: 2rem;
+    transition: all;
+}
+
+.hero__button:hover {
+    background-color: #d47c17;
+}
+
+.hero__image {
+    margin: 0 auto;
+    width: 90%;
+}
+
+@media (min-width:1024px ){
+    .hero__image {
+        margin: 0;
+        width: 100%;
+    }
+}
+
+
+/* main  */
+/* section pilares */
+
+.main {
+    margin-top: 5rem;
+}
+
+.pilares {
+    padding-top: 10rem;
+}
+
+.pilar {
+    border: 10px solid rgb(235, 232, 232);
+    margin-bottom: 2rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    border-radius: 2rem;
+}
+
+.pilar:last-child {
+    margin-bottom: 0;
+}
+
+.pilar__nombre {
+    margin-bottom: 0;
+}
+
+.pilar__img {
+    width: 15rem;
+    margin: 0 auto;
+}
+
+.pilar__img:last-child {
+    width: 20rem;
+}
+
+.pilar__descripcion:last-child {
+    margin-top: 0;
+}
+
+
+@media (min-width:768px ){
+    .pilares__contenedor {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 2rem;
+    }
+
+    .pilar {
+        margin: 0;
+    }
+}
+
+
+
+/* quienes somos */
+
+.somos {
+    padding-top: 10rem;
+    margin-top: 10rem;
+    background-image: url(../assets/icons/circupuntos.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 25rem;
+}
+
+@media (min-width:1024px ){
+    .somos {
+        background-position: right top;
+    }
+}
+
+.mision__img, 
+.vision__img {
+    width: 20rem;
+    margin: 0 auto;
+}
+
+.mision {
+    margin-top: 5rem;
+}
+
+.mision h4,
+.vision h4{
+    font-size: 4rem;
+    line-height: 0;
+}
+
+@media (min-width: 1024px){
+    .somos__contenedor {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: 25rem 30rem;
+        grid-auto-flow: dense;
+        gap: 2rem;
+    }
+
+    .somos__img {
+        grid-column: 1/3;
+        grid-row: 1/3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -5rem;
+    }
+
+    .somos__descripcion {
+        grid-column: 3/5;
+    }
+
+    .mision {
+        margin-top: 0;
+    }
+
+    .mision__img, 
+    .vision__img {
+        width: 5rem;
+        margin: 0 auto;
+    }
+
+    .mision h4,
+    .vision h4{
+        font-size: 2rem;
+        line-height: 1;
+        margin: 0;
+    }
+
+}
+
+/* productos */
+
+.productos {
+    padding-top: 10rem;
+    margin-top: 10rem;
+    position: relative;
+}
+
+.productos::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 35rem;
+    height: 35rem;
+    top: 0;
+    left: 10%;
+    transform: translateX(-10%);
+    background-image: url(../assets/icons2/PRINCIPALES/5BPricipal.png), url(../assets/icons2/PRINCIPALES/7Pricipal.png);
+    background-repeat: no-repeat;
+    background-size: 25rem, 6rem 6rem;
+    background-position: top, right top;
+}
+
+.productos__contenedor {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+
+.item__descripcion {
+    margin: 0;
+}
+
+@media (min-width:1024px ){
+    .productos__contenedor {
+        flex-direction: row;
+    }
+}
+
+.item {
+    padding: 2rem;
+    background-color: rgba(128, 128, 128, 0.541);
+    border-radius: 2rem;
+    transition: all .3s;
+}
+
+@media (min-width:1024px ){
+    .item {
+        height: auto;
+    }
+}
+
+.item:hover {
+    transform: scale(1.05);
+}
+
+/* servicios */
+
+.servicios {
+    padding-top: 10rem;
+    margin-top: 10rem;
+}
+
+.servicios__contenedor {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+@media (min-width:1024px ){
+    .servicios__contenedor {
+        flex-direction: row;
+    }
+}
+
+.item-white {
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+/* contacto */
+
+.contacto {
+    padding-top: 10rem;
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+    position: relative;
+    background-image: url(../assets/icons/circupuntos.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 25rem;
+}
+
+@media (min-width:1024px ){
+    .contacto {
+        background-position: right top;
+        background-size: auto;
+    }
+}
+
+
+@media (min-width:1530px ){
+    .contacto::after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 10%;
+        height: 30rem;
+        top: 40%;
+        left: 0;
+        background-image: url(../assets/icons2/PRINCIPALES/FINAL/2Final.png), url(../assets/icons2/PRINCIPALES/FINAL/1Final.png);
+        background-position: left center, left center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+}
+
+
+.contacto__contenedor {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+@media (min-width:1024px ){
+    .contacto__contenedor {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        align-items: center;
+        gap: 0;
+    }
+}
+
+.contacto__formulario {
+    width: 100%;
+    border: 10px solid rgb(235, 232, 232);
+    padding: 2rem 4rem;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    background-color: white;
+}
+
+.contacto__label {
+    display: block;
+    font-weight: 700;
+    color: rgba(89, 89, 89, 0.541);
+    font-size: 2rem;
+}
+
+.contacto__input {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgb(167, 167, 167);
+    font-size: 1.75rem;
+}
+
+.contacto__enviar {
+    all: unset;
+    padding: 1rem 4rem;
+    color: white;
+    font-weight: 700;
+    background-color: var(--color3);
+    border-radius: 1rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.contacto__input {
+    width: 100%;
+}
+
+.contacto__formulario {
+    position: relative;
+    overflow: hidden;
+    padding-top: 10rem;
+}
+
+.contacto__formulario::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 110%;
+    height: 10rem;
+    top: 0;
+    left: 0;
+    border-radius: 1rem 1rem 0 0;
+    background-image: url(../assets/icons2/PRINCIPALES/FINAL/3Final.png);
+    background-size: cover; 
+}
